@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* General Styling*/
+#header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+#header h1 {
+  text-align: center;
+}
+
+#navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#navLinks a {
+  color: #bdbdbd;
+  /* transition makes it so the link doesn't instantly change on hover. you can remove
+  this or play with the timing. This is especially useful if you're changing the size or
+  saturation of elements */
+  transition: all 0.2s ease-out;
+}
+
+#navLinks a:hover {
+  color: #ffabdf;
+  /* You can also do other things here, like make it bigger if you want:
+  transform: scale(120%);*/
+}
+
+.main {
+  padding: 0em 2em 1em 2em;
+  margin: 0 auto;
+  background-color: white;
+}
+
+hr {
+  margin: 2em 0;
+}
+
+#footer {
+  text-align: center;
+  background-color: #d4d4d4;
+  padding: 15px;
+}
+
+/* Page specific */
+.textPage {
+  max-width: 800px;
+}
+
+.gallery {
+  padding-top: 1em;
+  columns: auto 3;
+}
+
+.gallery img {
+  border: 1px solid black;
+  width: 26vw;
+}
+
+figure {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.spotlightImage {
+  display: block;
+  margin: 0 auto;
+}
