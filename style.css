@@ -4,20 +4,30 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif; /* change the main font of the site here*/
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* General Styling*/
 #header {
+  /* Color and spacing */
   background-color: black;
   color: white;
   padding: 20px;
+  /* Code below creates the sticky header, if you don't like that then delete this */
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
 #header h1 {
   text-align: center;
 }
 
+/* This is only spacing for the navigation links, don't edit unless you want to change that*/
 #navLinks {
   display: flex;
   align-items: center;
@@ -26,6 +36,7 @@ html {
   width: 100%;
 }
 
+/* to change the style of the navigation links, edit this:*/
 #navLinks a {
   color: #bdbdbd;
   /* transition makes it so the link doesn't instantly change on hover. you can remove
@@ -35,14 +46,14 @@ html {
 }
 
 #navLinks a:hover {
-  color: #ffabdf;
+  color: white;
   /* You can also do other things here, like make it bigger if you want:
   transform: scale(120%);*/
 }
 
 .main {
   padding: 0em 2em 1em 2em;
-  margin: 0 auto;
+  margin: 0 auto; /* centers the main content */
   background-color: white;
 }
 
@@ -52,15 +63,15 @@ hr {
 
 #footer {
   text-align: center;
-  background-color: #d4d4d4;
   padding: 15px;
 }
 
 /* Page specific */
 .textPage {
-  max-width: 800px;
+  max-width: 800px; /*You can remove or not use this, I just think it looks better on bigger windows */
 }
 
+/* Touching any CSS below this can break the gallery. Proceed with caution */
 .gallery {
   padding-top: 1em;
   columns: auto 3;
@@ -68,7 +79,7 @@ hr {
 }
 
 .gallery img {
-  border: 1px solid black;
+  border: 1px solid black; /* You can remove the border if you want */
   width: 26vw;
 }
 

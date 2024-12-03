@@ -1,7 +1,7 @@
 /*
 This file generates html when you add a header or footer id to a div
 Example:    <div id=header></div> on line 12 of index.html
-            <div id=footer></div> on line XX of index.html
+            <div id=footer></div> on line 43 of index.html
 This allows you to update the header and footer across your site but editing only this
 file, instead of editing every html page when you want to change a link
 */
