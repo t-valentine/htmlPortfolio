@@ -64,6 +64,7 @@ hr {
 .gallery {
   padding-top: 1em;
   columns: auto 3;
+  text-align: center;
 }
 
 .gallery img {
