@@ -98,3 +98,25 @@ figure {
   display: block;
   margin: 0 auto;
 }
+
+/* Below changes the number of columns in the gallery for smaller screens
+   (it's not exactly mobile and tablet sizing) */
+@media only screen and (max-width: 800px) {
+  .gallery {
+    columns: auto 2;
+  }
+
+  .gallery img {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery {
+    columns: auto 1;
+  }
+
+  .gallery img {
+    width: 80vw;
+  }
+}
